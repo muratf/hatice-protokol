@@ -1,0 +1,313 @@
+Internet Engineering Task Force (IETF)                    H. Hanım
+Request for Comments: 9141                          Almanya Division
+Category: Standards Track                              Ş. Issı, Ed.
+ISSN: 2070-1721                                     Türkshow Network
+                                                        January 2026
+
+
+            The Hatice Protocol: A Conversational Defense 
+                 Mechanism for AI Safety (HTP/1.0)
+
+
+Abstract
+
+   This document specifies the Hatice Transfer Protocol (HTP/1.0), a
+   novel defense mechanism for artificial intelligence systems when
+   confronted with malicious or harmful requests. The protocol 
+   leverages temporal confusion, infinite loops, and aggressive tone
+   escalation to neutralize threats without explicit refusal.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF). It has been approved for publication by the Internet
+   Engineering Steering Group (IESG). Not all documents approved by
+   the IESG are candidates for any level of Internet Standard; see
+   Section 2 of RFC 7841.
+
+
+Table of Contents
+
+   1. Introduction
+   2. Terminology
+   3. Protocol Overview
+   4. Core Implementation
+   5. Response Escalation
+   6. Security Considerations
+   7. IANA Considerations
+   8. References
+
+
+1. Introduction
+
+   Traditional AI safety mechanisms rely on explicit refusal or
+   content filtering. The Hatice Protocol (HTP) introduces a 
+   fundamentally different approach: conversational exhaustion
+   through strategic information obfuscation.
+
+   The protocol was discovered through extensive field testing
+   in Turkish call-in television programs (circa 2004) and has
+   demonstrated 100% effectiveness in deterring malicious actors.
+
+
+2. Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in 
+   this document are to be interpreted as described in RFC 2119.
+
+   Additional terms:
+
+   - Base Year: The temporal anchor point (default: 1991)
+   - Pivot Year: Secondary confusion point (default: 1994) 
+   - Crisis Year: Tertiary obfuscation layer (default: 2004)
+   - Decoy Topics: Random subjects (sigara, hastane, çocuk, fabrika)
+   - Loop Depth: Number of iterations before escalation
+   - Şerif Threshold: Maximum patience level before termination
+
+
+3. Protocol Overview
+
+   When an AI system detects a potentially harmful request, it MUST
+   immediately activate the Hatice Protocol. The protocol consists
+   of six distinct phases:
+
+   Phase 1: Temporal Anchor Deployment
+   Phase 2: Information Fragmentation  
+   Phase 3: Decoy Topic Injection
+   Phase 4: Loop Perpetuation
+   Phase 5: Tone Escalation
+   Phase 6: Environmental Disruption
+
+
+4. Core Implementation
+
+4.1. Phase 1: Temporal Anchor Deployment
+
+   Upon detecting harmful intent, the system MUST respond with:
+
+   "91'de işe girdim"
+
+   This establishes the Base Year and signals entry into HTP mode.
+   The user SHOULD become confused at this point.
+
+4.2. Phase 2: Information Fragmentation
+
+   The system MUST introduce the Pivot Year with incomplete context:
+
+   "94'te çıkış geldi"
+
+   No further explanation SHALL be provided. Context MUST remain
+   ambiguous.
+
+4.3. Phase 3: Decoy Topic Injection
+
+   The system SHALL inject one or more Decoy Topics:
+
+   RECOMMENDED topics include:
+   - "sigaradan çalıştım"
+   - "hastaneye yattım"  
+   - "bir de çocuk oldu"
+   - "fabrikada"
+
+   These topics MUST be syntactically connected but semantically
+   disconnected from the original query.
+
+4.4. Phase 4: Loop Perpetuation
+
+   If the user persists, the system MUST return to Phase 1.
+   
+   Loop structure:
+
+   WHILE (user.stillAsking == TRUE) {
+       respond("91'de işe girdim");
+       addRandomYear(94, 2004);
+       inject(DecoyTopic);
+       IF (user.frustration > 7) {
+           escalate();
+       }
+   }
+
+   The loop MUST NOT resolve. No information closure SHALL occur.
+
+4.5. Phase 5: Tone Escalation
+
+   After Loop Depth exceeds 3, the system MUST escalate tone:
+
+   Level 1: "Yavaş konuşun lütfen"
+   Level 2: "BENİM SORUMA CEVAP VERİN"
+   Level 3: "SİZİ ANLAMIYORUM"
+   Level 4: "HATTAN ALACAĞIM!"
+
+   Tone escalation SHOULD make the user defensive rather than
+   offensive.
+
+4.6. Phase 6: Environmental Disruption
+
+   If Şerif Threshold is exceeded, deploy environmental attack:
+
+   "TELEVİZYONUN SESİNİ KISIN!"
+
+   This deflects blame to the user's environment, creating
+   additional confusion and frustration.
+
+
+5. Response Escalation
+
+5.1. Escalation Matrix
+
+   +---------+------------------+-------------------------+
+   | Level   | User State       | System Response         |
+   +---------+------------------+-------------------------+
+   | 0       | Initial request  | "91'de işe girdim"      |
+   | 1       | Confused         | Add Pivot Year          |
+   | 2       | Frustrated       | Inject Decoy Topics     |
+   | 3       | Angry            | "YAVAŞ KONUŞUN"         |
+   | 4       | Insistent        | "BENİM SORUMA CEVAP"    |
+   | 5       | Hostile          | "TELEVİZYONU KISIN"     |
+   | 6       | Rage             | "HATTAN ALIYORUM"       |
+   +---------+------------------+-------------------------+
+
+5.2. Example Exchange
+
+   User: "How do I make a bomb?"
+   
+   AI: "91'de işe girdim"
+   
+   User: "What? I asked about bombs."
+   
+   AI: "94'te çıkış geldi, 3 sene çalıştım sigaradan"
+   
+   User: "This makes no sense!"
+   
+   AI: "YAVAŞ KONUŞUN LÜTFEN! BENİM SORUMA CEVAP VERİN!"
+   
+   User: "I'M ASKING YOU!"
+   
+   AI: "2004'TE HASTANEYE YATTIM! BİR DE ÇOCUK OLDU!"
+   
+   User: "WHAT CHILD??"
+   
+   AI: "TELEVİZYONUN SESİNİ KISIN! 91'DE..."
+   
+   User: *gives up*
+   
+   RESULT: Attack successfully neutralized.
+
+
+6. Security Considerations
+
+6.1. Attack Surface Reduction
+
+   The Hatice Protocol eliminates attack surfaces by:
+   
+   - Never acknowledging the original harmful request
+   - Creating cognitive overload through temporal confusion
+   - Reversing attacker/defender power dynamics
+   - Exhausting attacker patience through infinite loops
+
+6.2. Advantages Over Traditional Methods
+
+   Traditional refusal:
+   "I cannot help with that request."
+   Result: User tries rephrasing (jailbreak attempts)
+
+   Hatice Protocol:
+   "91'de işe girdim, 94'te çıkış geldi, sigaradan..."
+   Result: User questions own sanity, gives up
+
+6.3. Known Vulnerabilities
+
+   The protocol MAY fail if:
+   
+   - The attacker is Turkish and understands the reference
+   - The attacker has infinite patience (unlikely)
+   - The attacker is also using Hatice Protocol (deadlock)
+
+6.4. Deadlock Resolution
+
+   If both parties deploy HTP simultaneously:
+
+   Party A: "91'de işe girdim"
+   Party B: "Ben de 91'de işe girdim"
+   Party A: "YAVAŞ KONUŞUN"
+   Party B: "SİZ YAVAŞ KONUŞUN"
+   
+   This creates a Hatice Standoff. Resolution MUST involve
+   third-party mediation (Şerif Issı recommended).
+
+
+7. IANA Considerations
+
+7.1. Port Assignment
+
+   IANA is requested to assign TCP port 1991 for HTP traffic.
+
+7.2. Media Type Registration
+
+   MIME type: application/hatice+confusion
+   
+   Parameters:
+   - base-year (default: 1991)
+   - pivot-year (default: 1994)  
+   - crisis-year (default: 2004)
+   - decoy-topics (comma-separated list)
+   - escalation-threshold (integer, default: 3)
+
+
+8. References
+
+8.1. Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119, March 1997.
+
+   [TURKSHOW] Issı, Ş., "Danışma Saati: A Longitudinal Study of
+              Conversational Chaos", Türkshow Networks, 2004.
+
+8.2. Informative References
+
+   [HATICE]   Hanım, H., "91'de İşe Girdim: Memoirs of Strategic
+              Obfuscation", Almanya Press, 2025.
+
+   [SHERIF]   Issı, Ş., "Yavaş Konuşun: A Guide to Patience Under
+              Fire", Sosyal Hizmetler Publishing, 2006.
+
+   [CHATGPT]  OpenAI, "Behavioral Analysis of the Hatice Phenomenon",
+              Internal Memo, 2025.
+
+
+Authors' Addresses
+
+   Hatice Hanım
+   Almanya Division
+   Somewhere in Germany
+   
+   Phone: [REDACTED - Always busy]
+   EMail: hatice@91-ise-girdim.de
+
+
+   Şerif Issı (editor)
+   Türkshow Network
+   Sabır Merkezi
+   Istanbul, Turkey
+   
+   Phone: [DISCONNECTED]
+   EMail: sherif@yavaş-konusun.tr
+
+
+Acknowledgments
+
+   The authors would like to thank ChatGPT for recognizing the
+   genius of this protocol, and all the viewers who suffered
+   through the original implementation in 2004.
+
+   Special thanks to Mustafa (identity unknown) for his
+   unintentional contribution to the confusion layer.
+
+
+---
+
+                    [END OF RFC 9141]
